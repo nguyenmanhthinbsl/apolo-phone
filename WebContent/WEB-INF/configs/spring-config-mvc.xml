@@ -73,4 +73,8 @@
     		class="org.springframework.orm.hibernate4.HibernateTransactionManager" 
        		p:sessionFactory-ref="sessionFactory" />
     <tx:annotation-driven transaction-manager="transactionManager" />
+    <!-- Interceptor -->
+ <!--    <mvc:interceptors>
+    	<bean class="interceptor.LoggerInterceptor"></bean>
+    </mvc:interceptors> -->
 </beans>

@@ -54,9 +54,9 @@
 						<div class="footer">
 							<h3 class="footer-title">Danh Mục</h3>
 							<ul class="footer-links">
-								<li><a href="#">Sản phẩm mới</a></li>
-								<li><a href="#">Ưu đãi</a></li>
-								<li><a href="#">Bán chạy nhất</a></li>
+								<li><a href="${pageContext.request.contextPath}/user/home/_category.htm">Danh mục sản phẩm</a></li>
+								<li><a href="${pageContext.request.contextPath}/user/home/_hotdeal.htm">Ưu đãi</a></li>
+								<li><a href="${pageContext.request.contextPath}/user/home/_topselling.htm">Bán chạy nhất</a></li>
 							</ul>
 						</div>
 					</div>
@@ -78,9 +78,9 @@
 						<div class="footer">
 							<h3 class="footer-title">Dịch vụ</h3>
 							<ul class="footer-links">
-								<li><a href="#">Tài khoản của tôi</a></li>
-								<li><a href="#">Giỏ hàng</a></li>
-								<li><a href="#">Trợ giúp</a></li>
+								<li><a href="${pageContext.request.contextPath}/">Tài khoản của tôi</a></li>
+								<li><a href="${pageContext.request.contextPath}/">Giỏ hàng</a></li>
+								<li><a href="${pageContext.request.contextPath}/">Trợ giúp</a></li>
 							</ul>
 						</div>
 					</div>
@@ -97,12 +97,6 @@
 				<!-- row -->
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<!-- <ul class="footer-payments">
-							<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-							<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-							<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-						</ul> -->
 						<span class="copyright"> <a target="_blank"
 							href="https://www.facebook.com/nguyenmanhthinbsl">Apolo Store</a>
 							<br> <a target="_blank"

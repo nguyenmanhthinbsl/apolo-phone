@@ -11,6 +11,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "TaiKhoan")
@@ -24,6 +28,8 @@ private String Email;
 private String Password;
 @Column(name = "Name")
 private String Name;
+@Temporal(TemporalType.DATE)
+@DateTimeFormat(pattern = "MM/DD/YYYY")
 @Column(name = "BirthDay")
 private Date BirthDay;
 @Column(name = "Gender")
@@ -92,6 +98,11 @@ public Taikhoan(String username, String email, String password, String name, Dat
 	Gender = gender;
 	Phone = phone;
 	Address = address;
+}
+public Taikhoan(String username, String password) {
+	super();
+	Username = username;
+	Password = password;
 }
 public Taikhoan() {
 	super();

@@ -1,4 +1,15 @@
-
+<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dependency Injection</title>
+<base href="${pageContext.servletContext.contextPath}">
+</head>
+<body>
+</body>
+</html> --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglib.jsp"%>
@@ -33,8 +44,8 @@
 <!-- End Header -->
 <!-- MEUNU -->
 	<jsp:include page="./menu/_navigation.jsp" flush="true"/>
-	<%-- <jsp:include page="./menu/_collection.jsp" flush="true"/> --%>
-	<%-- <jsp:include page="./menu/_productlist.jsp" flush="true"/> --%>
+<%-- 	<jsp:include page="./menu/_collection.jsp" flush="true"/> --%>
+	<%-- <jsp:include page="./menu/_category.jsp" flush="true"/> --%>
 	<%-- <jsp:include page="./menu/_topselling.jsp" flush="true"/> --%>
 <!-- End MENU -->
 <!-- FOOTER -->

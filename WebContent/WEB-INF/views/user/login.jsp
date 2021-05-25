@@ -62,7 +62,7 @@
 				<!-- LOGO -->
 				<div class="col-md-3">
 					<div class="header-logo">
-						<a href="" class="logo">
+						<a href="${pageContext.request.contextPath}/user/index.htm" class="logo">
 							<form:form>
 								<h3 style="color: white; margin-top: 15%">ApoloPhone</h3>
 							</form:form>
@@ -80,9 +80,9 @@
 		<form  action ="logginController" method ="post" style="width: 300px;height:385.6px ;margin-left: 40%; margin-top: 10%"  >
 			 <h1 class="h3 mb-3 fw-normal">Đăng nhập</h1> 
 			 <!-- id="inputEmail" -->
-			<input name ="username" type="text"  class="form-control" placeholder="Email address" required autofocus> 
+			<input name ="usernameLogin" type="text"  class="form-control" placeholder="User Name" required autofocus> 
 			<!-- id="inputPassword" -->
-			<input name ="password" type="password"  class="form-control"placeholder="Password" required>
+			<input name ="passwordLogin" type="password"  class="form-control"placeholder="Password" required>
 			<button type="button" class="btn btn-primary btn-sm">Đăng nhập</button>
 			<button type="button" class="btn btn-secondary btn-sm"> Đăng ký </button>
 		</form>

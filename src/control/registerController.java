@@ -13,7 +13,7 @@ import entity.Taikhoan;
 @Controller
 @RequestMapping("/user/")
 public class registerController {
-	@RequestMapping(value = "register", method = RequestMethod.GET)
+	@RequestMapping(value = "formRegister", method = RequestMethod.GET)
 	public String userRegister(ModelMap model) {
 		model.addAttribute("Taikhoan", new Taikhoan());
 		return "user/register";

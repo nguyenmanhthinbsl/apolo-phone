@@ -34,12 +34,12 @@
 			<div class="container">
 				<ul class="header-links pull-right">
 					<li><a
-						href="${pageContext.request.contextPath}/index.htm">Trang chủ</a></li>
+						href="${pageContext.request.contextPath}/user/index.htm">Trang chủ</a></li>
 					<li class="hidden-xs"><a
-						href="${pageContext.request.contextPath}/user/register.htm">Đăng
+						href="${pageContext.request.contextPath}/user/formRegister.htm">Đăng
 							ký</a></li>
 					<li><a
-						href="${pageContext.request.contextPath}/user/login.htm">Đăng
+						href="${pageContext.request.contextPath}/user/formLogin.htm">Đăng
 							nhập</a></li>
 				</ul>
 			</div>
@@ -56,7 +56,8 @@
 					<!-- LOGO -->
 					<div class="col-md-3">
 						<div class="header-logo">
-							<a href="#" class="logo"> <form:form action="user/index.htm">
+							<a href="${pageContext.request.contextPath}/user/index.htm" class="logo"> 
+							<form:form>
 									<h3 style="color: white; margin-top: 15%;">ApoloPhone</h3>
 								</form:form>
 							</a>
@@ -67,88 +68,20 @@
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
-							<form>
-								<%-- <select class="input-select">
-								<c:forEach var="u" items=${categoryName }>
-								<option>${u }</option>
+							<form action="homeController">
+								<select class="input-select">
+								<c:forEach var="item" items="${listCategory }">
+									<option value="${pageContext.request.contextPath}/user/_category/${item}">${item }</option>
 								</c:forEach>
-								</select>  --%>
+								</select> 
 								<input class="input" placeholder="Tìm kiếm">
-								<form:form action="">
-									<button class="search-btn">Tìm</button>
+								<form:form method="post">
+									<button name="search" class="search-btn">Tìm</button>
 								</form:form>
 							</form>
 						</div>
 					</div>
 					<!-- /SEARCH BAR -->
-
-					<!-- ACCOUNT -->
-					<div class="col-md-3 clearfix">
-						<div class="header-ctn">
-							<!-- Cart -->
-							<div class="dropdown">
-								<a class="dropdown-toggle" data-toggle="dropdown"
-									aria-expanded="true"> <i class="fa fa-shopping-cart"></i> <span>cart</span>
-									<!-- <div class="qty">số</div> -->
-								</a>
-								<!-- Giỏ hàng -->
-								<div class="cart-dropdown">
-									<div class="cart-list">
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="../resources/img/product01.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name">
-													<a href="#">tên</a>
-												</h3>
-												<h4 class="product-price">
-													<span class="qty">số lượng</span>giá
-												</h4>
-											</div>
-											<button class="delete">
-												<i class="fa fa-close"></i>
-											</button>
-										</div>
-
-										<div class="product-widget">
-											<div class="product-img">
-												<img src="../resources/img/product02.png" alt="">
-											</div>
-											<div class="product-body">
-												<h3 class="product-name">
-													<a href="#">tên</a>
-												</h3>
-												<h4 class="product-price">
-													<span class="qty">số lượng</span>$giá
-												</h4>
-											</div>
-											<button class="delete">
-												<i class="fa fa-close"></i>
-											</button>
-										</div>
-									</div>
-									<div class="cart-summary">
-										<small>Tổng số hàng đã chọn</small>
-										<h5>Tổng tiền</h5>
-									</div>
-									<div class="cart-btns">
-										<!-- 	<a href="#">Xem chi tiết</a> -->
-										<a href="#">Thanh toán <i class="fa fa-arrow-circle-right"></i></a>
-									</div>
-								</div>
-							</div>
-							<!-- /Cart -->
-
-							<!-- Menu Toogle -->
-							<div class="menu-toggle">
-								<a href="#"> <i class="fa fa-bars"></i> <span>Menu</span>
-								</a>
-							</div>
-							<!-- /Menu Toogle -->
-						</div>
-					</div>
-					<!-- /ACCOUNT -->
 				</div>
 				<!-- row -->
 			</div>

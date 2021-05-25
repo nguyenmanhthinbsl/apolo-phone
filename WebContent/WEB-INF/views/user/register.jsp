@@ -39,7 +39,8 @@
 				<!-- LOGO -->
 				<div class="col-md-3">
 					<div class="header-logo">
-						<a href="#" class="logo"> <form:form>
+						<a href="${pageContext.request.contextPath}/user/index.htm" class="logo"> 
+						<form:form>
 								<h3 style="color: white; margin-top: 15%">ApoloPhone</h3>
 							</form:form>
 						</a>
@@ -52,37 +53,20 @@
 	</div>
 	<!-- END LOGIN HEADER -->
 	<main class="form-signin">
-		<form:form action="user/success.htm" modelAttribute="Taikhoan">
-		<div>
-			<label>User name</label>
-			 <form:input path="username" /> 
-		</div>
-		<div>
-			<label>Email</label>
-			 <form:input path="email" />
-		</div>
-		<div>
-			<label>Password</label>
-			 <form:input path="password" /> 
-		</div>
-		<div>
-			<label>Full name</label>
-			 <form:input path="name" /> 
-		</div>
-		<div>
-			<label>Birth day</label>
-			<form:input path="password" />
-		</div>
-		<div>
-			<label>Gender</label>
-			 <form:input path="password" /> 
-		</div>
-		<div>
-			<label>Phone</label>
-			<form:input path="password" /> 
-		</div>
-		<button>Đăng ký</button>
-	</form:form>
+		<form  action ="registerController" method ="post" style="width: 300px;height:385.6px ;margin-left: 40%; margin-top: 10%"  >
+			 <h1 class="h3 mb-3 fw-normal">Đăng Ký Tài Khoản </h1> 
+			 <!-- id="registerUsername" -->
+			<input name ="registerUsername" type="text"  class="form-control" placeholder="Username" required autofocus>
+			<!-- id ="registerEmail" --> 
+			<input name ="registerEmail" type="text"  class="form-control"placeholder="Email address" required>
+			<!-- id="inputPassword" -->
+			<input name ="registerPassword" type="password"  class="form-control"placeholder="Password" required>
+			<input name ="registerRetypePassword" type="password"  class="form-control"placeholder="Confirm Password" required>
+			<input name ="registerDateOfBirth" type=""  class="form-control"placeholder="Date Of Birth" required>
+			<input name ="registerGender" type="text"  class="form-control"placeholder="Gender" required>
+			<button type="button" class="btn btn-primary btn-sm" > Đăng Ký   </button>
+			<button type="button" class="btn btn-primary btn-sm"> Đăng Nhập </button>
+		</form>
 	</main>
 	
 	

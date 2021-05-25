@@ -34,12 +34,14 @@
 			<!-- responsive-nav -->
 			<div id="responsive-nav">
 				<!-- NAV -->
+				<form class="homeController" method ="get">
 				<ul class="main-nav nav navbar-nav">
-					<li class="active"><a href="#">Trang chủ</a></li>
-					<li><a href="user/menu/category.htm">Danh mục sản phẩm</a></li>
-					<li><a href="user/menu/topselling.htm">Ưu đãi</a></li>
-					<!-- <li><a href="#">Bán chạy nhất</a></li> -->
+					<li class="active"><a href="${pageContext.request.contextPath}/user/index.htm">Trang chủ</a></li>
+					<li><a href="${pageContext.request.contextPath}/user/home/_category.htm">Danh mục sản phẩm</a></li>
+					<li><a href="${pageContext.request.contextPath}/user/home/_hotdeal.htm">Ưu đãi</a></li>
+					<li><a href="${pageContext.request.contextPath}/user/home/_topselling.htm">Bán chạy nhất</a></li>
 				</ul>
+				</form>
 				<!-- /NAV -->
 			</div>
 			<!-- /responsive-nav -->

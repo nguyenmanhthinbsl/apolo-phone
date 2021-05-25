@@ -9,5 +9,5 @@
 <base href="${pageContext.servletContext.contextPath}">
 </head>
 <body>
-</body>
+</body>	
 </html>
